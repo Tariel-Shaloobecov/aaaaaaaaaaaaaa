@@ -1,0 +1,195 @@
+body{
+    background-image: url(img/fon2.png);
+    background-size: cover;
+}
+.earth{
+position: absolute;
+top: 40px;
+right: 550px;
+animation-name: earth1;/*название анимации*/
+animation-duration: 40s;/*продолжительность анимации*/
+animation-iteration-count: infinite;/*повтор*/
+animation-timing-function:ease;/*плавное движение*/
+}
+@keyframes earth1{
+    0%{
+transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(125deg);
+
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}
+.yellow{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    animation-name: yellow1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+@keyframes yellow1{  
+    0%{
+        transform: translate(0px,0px);
+    }
+    
+        25%{
+            transform: translate(-25px,-25px);
+        }
+        50%{
+            transform: translate(30px,20px);
+        }
+          
+        75%{
+            transform: translate(-75px,-20px);
+    
+        }
+        100%{
+            transform: translate(170px,105px);
+        }}    
+  
+
+.sun{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    animation-name: sun1;/*название анимации*/
+    animation-duration: 15s;/*продолжительность анимации*/
+    animation-iteration-count: infinite;/*повтор*/
+    animation-timing-function:ease;/*плавное движение*/
+}
+@keyframes sun1{ from{transform: rotate(0deg)}
+    to{
+        transform: rotate(180deg);
+    }
+}
+.moon{
+    position: fixed;
+    bottom: -10px;
+    width: 1000px;
+    left: 0;
+}
+.astro{
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    animation-name:astro1;/*название анимации*/
+    animation-duration:15s;/*продолжительность анимации*/
+    animation-iteration-count: 1;/*повтор*/
+    animation-timing-function:ease;/*плавное движение*/
+    animation-fill-mode: forwards;
+}
+@keyframes astro1{  
+    20%{
+        bottom: 40px;
+        left: 200px;
+    }
+    
+        45%{
+          bottom: 100px;
+            left: 250px;  
+        }
+        60%{
+           bottom: 50x;
+            left: 740px; 
+        }
+          
+        80%{
+            bottom: 150px;
+            left: 900px;
+    
+        }
+        100%{
+            bottom: 100px;
+            left:90%;
+        }}    
+
+
+.meteor{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    animation-name:meteor1;/*название анимации*/
+    animation-duration:9s;/*продолжительность анимации*/
+    animation-iteration-count: 1;/*повтор*/
+    animation-timing-function:ease-out;/*плавное движение*/
+    animation-fill-mode: forwards;
+}
+@keyframes meteor1{  
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    
+        25%{
+        top: 150px;
+        bottom: 250px;
+        }
+        50%{
+        top: 280px;
+        left: 380px;
+        }
+          
+        75%{
+        top: 370px;
+        left: 470px;
+    
+        }
+        100%{
+            top: 75%;
+            left: 70%;
+        }}    
+
+
+.air{
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    animation-name:air1;/*название анимации*/
+    animation-duration:15s;/*продолжительность анимации*/
+    animation-iteration-count: 1;/*повтор*/
+    animation-timing-function:linear;/*плавное движение*/
+    animation-fill-mode: forwards;
+    animation-delay: 50s;
+}
+@keyframes air1{  
+    20%{
+       bottom: 40px;
+       right: 50px;
+       transform: rotate(-55deg);
+    }
+    
+        40%{
+        bottom: 80px;
+        right: 250px;
+        transform: rotate(-51deg);
+        }
+        60%{
+            bottom: 150px;
+            right: 480px;
+            transform: rotate(-52deg);
+        }
+          
+        80%{
+            bottom: 300px;
+            right: 1200px;
+            transform: rotate(-53deg);
+        }
+        100%{
+            bottom: 800px;
+            right: 1880px;
+            transform: rotate(-54deg);
+        }}    
+
+
